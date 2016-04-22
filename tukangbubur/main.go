@@ -42,7 +42,7 @@ func bungkus(in chan string, out chan string) {
 }
 
 func main() {
-	channel_1 := make(chan string)
+	channel_1 := make(chan string, 10)
 	channel_2 := make(chan string, 10)
 	channel_3 := make(chan string, 10)
 	channel_4 := make(chan string, 10)
